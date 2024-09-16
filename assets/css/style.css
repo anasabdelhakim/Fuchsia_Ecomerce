@@ -1,0 +1,382 @@
+/* Apply a universal reset and box-sizing rule */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define color variables for reuse */
+:root {
+  --dark-color: #19283f;
+  --blue-color: #007aff;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+/* Basic styling for the body */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Style the header to occupy the full viewport height */
+header {
+  height: 100vh;
+}
+
+/* Style for the logo section */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  height: 90px;
+}
+.logo a {
+  color: var(--dark-color);
+}
+
+.bag-icon {
+  transform: translateY(-3px);
+  font-size: 40px;
+  color: var(--red-color);
+}
+
+/* Navigation styling */
+.navigations li a {
+  height: 90px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out, border-bottom 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+.navigations li a:hover {
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  border-bottom: 2px solid var(--red-color);
+}
+
+/* Search bar styling */
+.search_nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--red-color);
+  border-radius: 30px;
+  background-color: white;
+}
+
+.search_nav input {
+  border-radius: inherit;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+.search_nav .nav-btn {
+  border-radius: inherit;
+  border: none;
+  background-color: var(--red-color);
+  color: white;
+}
+
+.btn-header-shop,
+.btn-header-sign {
+  transition: padding 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.btn-header-shop:hover {
+  opacity: 1;
+  background-color: var(--red-color);
+  padding: 6px 20px;
+}
+.btn-header-sign:hover {
+  opacity: 1;
+  background-color: var(--dark-color);
+  padding: 6px 25px;
+}
+
+/* Main navigation styling */
+.main-nav {
+  z-index: 3;
+  height: 90px;
+}
+
+/* Styling for the all-in-all class (used for the navbar) */
+.all-in-all {
+  height: 90px;
+  background-color: white;
+  border: 2px solid #ccc;
+}
+
+/* Shop section styling */
+.shop {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url("../images/istockphoto-1704996977-2048x2048.jpg");
+  background-size: cover;
+  height: calc(100% - 150px);
+}
+
+/* Title styling */
+.title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+  background-color: #ffbfbf;
+  height: 50px;
+  color: white;
+  padding: 0 15px;
+}
+.men h2 {
+  background-color: #748faa;
+}
+
+.title h2::before,
+.title h2::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-color: var(--red-color);
+  opacity: 0.5;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.men h2::before,
+.men h2::after {
+  background-color: var(--dark-color);
+}
+
+.title h2::before {
+  left: 0;
+}
+
+.title h2::after {
+  right: 0;
+}
+
+/* Button styling for filter buttons */
+.all-btn button {
+  border: 2px solid var(--red-color);
+}
+
+.all-btn button:hover {
+  background-color: var(--red-color);
+  color: white;
+}
+
+.clothes-card {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.clothes-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  transform: translateY(-10px);
+}
+/* Collection image styling */
+.collection-image {
+  position: relative;
+}
+
+.collection-image .sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--red-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+}
+
+/* Rating styling */
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.rating .str {
+  color: var(--red-color);
+}
+
+/* Styles for the heart icon within collection images */
+.collection-image .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--dark-color);
+}
+
+/* Styles for buttons within section items */
+.section-item button {
+  border: 1px solid var(--dark-color);
+  margin-top: 10px;
+}
+
+/* Hover effect for buttons within section items */
+.section-item button:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+/* Styles for the offers section background */
+.offers {
+  background-image: url("../images/istockphoto-694405262-2048x2048.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+/* Text color in the offers content section */
+.offers-conetnt span,
+.offers-conetnt h1 {
+  color: var(--dark-color);
+}
+
+/* Styles for sale text */
+.sale-text {
+  font-size: 60px;
+}
+
+/* Styles for discount text */
+.discount {
+  color: var(--dark-color);
+  font-size: 70px;
+}
+
+/* Styles for buttons within cards */
+.cards button {
+  padding: 8px 20px;
+  border: 1px solid var(--dark-color);
+  outline: none;
+  background-color: white;
+  border-radius: 20px;
+  color: var(--dark-color);
+  transition: 0.3s all;
+}
+
+/* Hover effect for buttons within cards */
+.cards button:hover {
+  background-color: var(--dark-color);
+  border: 1px solid transparent;
+  color: white;
+}
+
+/* Styles for form control focus state */
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--red-color);
+}
+
+/* Maximum width for newsletter text */
+.Newsletter-text {
+  max-width: 500px;
+}
+
+/* Styles for attire text */
+.attire-text {
+  opacity: 0.7;
+  color: white !important;
+}
+
+/* Styles for contact information text */
+.conatactus span {
+  opacity: 0.7;
+}
+
+/* Styles for list items with links */
+.list-unstyled li a {
+  transform: translateX(15px) !important;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+/* Hover effect for list item links */
+.list-unstyled li a:hover {
+  opacity: 1;
+}
+
+/* Styles for links sections within list items */
+.list-unstyled .links-sections {
+  transition: margin-left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+/* Hover effect for links sections within list items */
+.list-unstyled li .links-sections:hover {
+  margin-left: 5px;
+  opacity: 1;
+}
+
+/* Transition effects for social media icons */
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-pinterest {
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for Facebook icon */
+.fa-facebook-f:hover {
+  color: var(--blue-color);
+}
+
+/* Hover effect for Twitter icon */
+.fa-twitter:hover {
+  color: black;
+}
+
+/* Hover effect for Instagram icon */
+.fa-instagram:hover {
+  color: var(--red-color);
+}
+
+/* Hover effect for Pinterest icon */
+.fa-pinterest:hover {
+  color: var(--yellow-color);
+}
+
+/* Responsive styles for screens with a max width of 780px */
+@media (max-width: 780px) {
+  #navbarSupportedContent {
+    background-color: #000000;
+  }
+
+  .main-links {
+    color: white;
+  }
+  .main-links:hover {
+    color: white;
+  }
+  .search-app {
+    width: 100%;
+  }
+  .search_nav {
+    width: 100%;
+    margin: 10px;
+  }
+  .sale-text {
+    font-size: 30px;
+  }
+
+  .discount {
+    font-size: 40px;
+  }
+}

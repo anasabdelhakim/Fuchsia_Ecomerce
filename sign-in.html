@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
+    <title>FUCHSIA</title>
+    <!-- Favicon for the website -->
+    <link rel="icon" href="assets/images/gamsason.png" />
+    <!-- Link to Bootstrap CSS for responsive styling and layout -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Link to webfonts CSS (path may need correction) -->
+    <link rel="stylesheet" href="assets/webfonts" />
+    <!-- Link to FontAwesome CSS for icons -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- Link to custom stylesheet for additional styles -->
+    <link rel="stylesheet" href="assets/css/sign-in.css" />
+  </head>
+
+  <body>
+    <!-- Container for the entire sign-in page content -->
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <!-- Main application box with a row layout -->
+      <div class="app row p-3 rounded-3">
+        <!-- Left side of the sign-in page with an image -->
+        <div
+          class="col-md-6 left-box rounded-3 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="featuerd-imag">
+            <img
+              src="assets/images/sign-in-image.jpg"
+              class="img-fluid"
+              alt="Sign In Illustration"
+            />
+          </div>
+        </div>
+
+        <!-- Right side of the sign-in page with form elements -->
+        <div class="col-md-6 right-box align-items-center">
+          <!-- Main title and subtitle -->
+          <p class="text-intreduce text-center fs-1">FUCHSIA</p>
+          <p class="text-center fs-3">Enjoy Sign In Application</p>
+
+          <!-- Sign-in form -->
+          <div class="mb-3">
+            <!-- Email or phone number input -->
+            <div class="User_Email mb-4">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                id="inputEmail"
+                name="email"
+                placeholder="Email address"
+              />
+            </div>
+
+            <!-- Password input with visibility toggle icon -->
+            <div class="User_Password mb-1">
+              <i id="password_hidden" class="fa-solid fa-eye-slash"></i>
+              <input
+                name="password"
+                id="inputPassword"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <!-- Remember me checkbox and forgot password link -->
+            <div class="d-flex justify-content-between align-items-center mb-5">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="formCheck"
+                />
+                <label for="formCheck" class="form-check-label text-secondary"
+                  >Remember me</label
+                >
+              </div>
+              <div class="forget">
+                <a href="">Forgot Password?</a>
+              </div>
+            </div>
+
+            <!-- Login button and Google sign-in button -->
+            <button class="btn btn-lg btn-danger w-100 fs-6 mb-3">Login</button>
+            <button class="btn btn-lg btn-light w-100 fs-6">
+              <img src="assets/images/foofle.png" alt="Google Logo" />Sign In
+              with Google Account
+            </button>
+          </div>
+
+          <!-- Sign up link for users without an account -->
+          <div>
+            <p>Don't have an account? <a href="">Sign up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to custom JavaScript file for sign-in functionality -->
+    <script src="assets/js/sign-in.js"></script>
+  </body>
+</html>

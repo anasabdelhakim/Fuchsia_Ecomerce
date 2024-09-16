@@ -1,0 +1,58 @@
+/* Sets the background color for the entire body */
+body {
+  background-color: #ececec;
+}
+
+/* Applies a shadow effect to the .app element to give it a lifted appearance */
+.app {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/* Sets the text color for all <p> elements */
+p {
+  color: #19283f;
+}
+
+/* Container for password and email inputs, positioning icons */
+.User_Password,
+.User_Email {
+  position: relative;
+}
+
+/* Styles for input fields within .User_Password and .User_Email containers */
+.User_Password input,
+.User_Email input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  outline: none;
+  font-size: large;
+  width: 100%;
+}
+
+/* Styles for icons inside the input containers, positioned to the right */
+.User_Password i,
+.User_Email i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Hides the password visibility toggle icon */
+.unshowPassword {
+  visibility: hidden;
+}
+
+/* Sets the width of images inside buttons to 30px */
+button img {
+  width: 30px;
+}
+
+/* Sets the color of text in elements with the class .text-intreduce */
+.text-intreduce {
+  color: #ff3150 !important;
+}
