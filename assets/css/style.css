@@ -63,6 +63,7 @@ header {
 }
 
 /* Search bar styling */
+
 .search_nav {
   position: relative;
   display: flex;
@@ -83,7 +84,7 @@ header {
 .search_nav .nav-btn {
   border-radius: inherit;
   border: none;
-  background-color: var(--red-color);
+  background: var(--red-color);
   color: white;
 }
 
@@ -209,7 +210,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 5px 0;
+  padding: px 0;
 }
 
 .rating .str {
@@ -389,12 +390,24 @@ header {
     align-items: center;
     text-align: center;
   }
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(135deg, #ff3150, #ff6b81, #ff9a9e) !important;
+  }
+  .navigations li a {
+    color: white;
+  }
+
+  .navigations li a:hover {
+    border-bottom: 2px solid white;
+  }
 }
 @media (max-width: 576px) {
   .rating > span {
     font-size: 14px;
-     width: 50px;
-   
   }
   .rating {
     flex-direction: column;
@@ -416,5 +429,4 @@ header {
   .clothes-card button {
     font-size: small;
   }
-
 }
