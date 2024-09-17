@@ -3,9 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+section {
   overflow-x: hidden;
 }
-
 /* Define color variables for reuse */
 :root {
   --dark-color: #19283f;
