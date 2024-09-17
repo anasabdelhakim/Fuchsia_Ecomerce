@@ -394,6 +394,10 @@ header {
   .rating > span {
     font-size: 14px;
   }
+  .rating {
+    flex-direction: column;
+  }
+
   .fa-star {
     font-size: 12px;
   }
@@ -404,6 +408,11 @@ header {
     height: 30px;
     font-size: 11px;
   }
-}
+  .clothes-card {
+    text-align: center;
+  }
+  .clothes-card button {
+    font-size: small;
+  }
 
 
