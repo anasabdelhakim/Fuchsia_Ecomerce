@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+section {
+  overflow-x: hidden;
+}
 
 /* Define color variables for reuse */
 :root {
@@ -12,9 +15,6 @@
   --red-color: #ff3150;
   --yellow-color: #ffc400;
   --section-color: #eff7fa;
-}
-section {
-  overflow-x: hidden;
 }
 
 /* Basic styling for the body */
@@ -208,6 +208,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 10px 0;
 }
 
@@ -382,10 +383,25 @@ header {
   .discount {
     font-size: 40px;
   }
-    .shop {
+  .shop {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .price-tishirt {
+    font-size: 10px;
+  }
+  .fa-star {
+    font-size: 10px;
+  }
+  .collection-image .sale {
+    width: 25px;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    font-size: 9px;
   }
 }
