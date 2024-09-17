@@ -393,6 +393,7 @@ header {
 @media (max-width: 576px) {
   .rating > span {
     font-size: 14px;
+    width: fit-content;
   }
   .rating {
     flex-direction: column;
