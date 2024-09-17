@@ -379,4 +379,10 @@ header {
   .discount {
     font-size: 40px;
   }
+    .shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
