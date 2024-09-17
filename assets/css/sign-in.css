@@ -59,3 +59,10 @@ button img {
 .text-intreduce {
   color: #ff3150 !important;
 }
+@media (max-width: 450px) {
+  .page-all {
+    align-items: flex-start !important;
+    overflow: hidden;
+  }
+}
+
