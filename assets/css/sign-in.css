@@ -1,4 +1,7 @@
 /* Sets the background color for the entire body */
+* {
+  overflow-x: hidden;
+}
 body {
   background-color: #ececec;
 }
