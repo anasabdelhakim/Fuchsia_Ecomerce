@@ -4,9 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-section {
-  overflow-x: hidden;
-}
+
 /* Define color variables for reuse */
 :root {
   --dark-color: #19283f;
@@ -14,6 +12,9 @@ section {
   --red-color: #ff3150;
   --yellow-color: #ffc400;
   --section-color: #eff7fa;
+}
+section {
+  overflow-x: hidden;
 }
 
 /* Basic styling for the body */
