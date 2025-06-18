@@ -5,7 +5,11 @@
 
 👉 [Live Demo](https://anasabdelhakim.github.io/Fuchsia_Ecomerce/)
 
----
+## 🖼️ Screenshots
+
+| Homepage | Special Collection | Blog Section |
+|---------|--------------------|--------------|
+| ![Home](assets/images/home_preview.jpg) | ![Collection](assets/images/collection_preview.jpg) | ![Blog](assets/images/blog_1.jpg) |
 
 ## ✨ Features
 
@@ -53,11 +57,7 @@ Fuchsia\_Ecomerce/
 
 ---
 
-## 🖼️ Screenshots
 
-| Homepage | Special Collection | Blog Section |
-|---------|--------------------|--------------|
-| ![Home](assets/images/home_preview.jpg) | ![Collection](assets/images/collection_preview.jpg) | ![Blog](assets/images/blog_1.jpg) |
 
 ---
 
