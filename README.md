@@ -7,9 +7,12 @@
 
 ## 🖼️ Screenshots
 
-| Homepage | Special Collection | Blog Section |
-|---------|--------------------|--------------|
-| ![Home](assets/images/home_preview.jpg) | ![Collection](assets/images/collection_preview.jpg) | ![Blog](assets/images/blog_1.jpg) |
+| Homepage | Special Collection ## 🖼️ Screenshots
+
+
+| ![Home](https://github.com/anasabdelhakim/Fuchsia_Ecomerce/blob/main/assets/images/hero.png?raw=true) | ![Collection](https://github.com/anasabdelhakim/Fuchsia_Ecomerce/blob/main/assets/images/Student.png?raw=true)
+
+
 
 ## ✨ Features
 
